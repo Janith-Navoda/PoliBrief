@@ -1,0 +1,79 @@
+# PoliBrief — Comprehensive Git Ignore
+
+# ─── Environment & Secrets ───
+.env*
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+
+# ─── Python & Virtual Environments ───
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+backend/venv/
+backend/.venv/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ─── Testing & Test Artifacts ───
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.stage1-test-tmp/
+backend/.stage1-test-tmp/
+*.tmp
+
+# ─── SQLite Databases ───
+*.db
+*.db-shm
+*.db-wal
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ─── Storage & Dynamic Content ───
+storage/database/*
+!storage/database/.gitkeep
+storage/generated/*
+!storage/generated/.gitkeep
+storage/logs/*
+!storage/logs/.gitkeep
+storage/templates/*
+!storage/templates/.gitkeep
+
+# ─── Node.js & Frontend ───
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Operating System & IDE ───
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
